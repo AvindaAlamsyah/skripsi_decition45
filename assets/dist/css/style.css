@@ -18949,6 +18949,27 @@ html body .display-6 {
   font-size: 2.5rem; }
 
 /*******************
+Border
+*******************/
+html body .b-0 {
+  border: none; }
+
+html body .b-r {
+  border-right: 1px solid #e9ecef; }
+
+html body .b-l {
+  border-left: 1px solid #e9ecef; }
+
+html body .b-b {
+  border-bottom: 1px solid #e9ecef; }
+
+html body .b-t {
+  border-top: 1px solid #e9ecef; }
+
+html body .b-all {
+  border: 1px solid #e9ecef !important; }
+
+/*******************
 Background colors
 *******************/
 html body .bg-megna {
@@ -19711,7 +19732,7 @@ Custom-select
   appearance: none;
   background-size: none; }
 
-/*******************
+/*******************  
 textarea
 ******************/
 textarea {
@@ -21868,6 +21889,12 @@ widget-chart-page product review
   .customtab li a.nav-link:hover {
     color: #fb9678; }
 
+/*
+Template Name: Admin Template
+Author: Wrappixel
+
+File: scss
+*/
 /*Theme Colors*/
 /**
  * Table Of Content
@@ -21886,12 +21913,6 @@ widget-chart-page product review
  *	12. Forms
  *	14. Component
  */
-/*
-Template Name: Admin Template
-Author: Wrappixel
-
-File: scss
-*/
 /*============================================================== 
  For Desktop & above all (1650px) 
  ============================================================== */

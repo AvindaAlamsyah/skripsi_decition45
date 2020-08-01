@@ -183,6 +183,31 @@ html body {
     }
 }
 
+/*******************
+Border
+*******************/
+
+html body { 
+    .b-0 {
+        border: none;
+    }
+    .b-r {
+        border-right: 1px solid $border-color;
+    }
+    .b-l {
+        border-left: 1px solid $border-color;
+    }
+    .b-b {
+        border-bottom: 1px solid $border-color;
+    }
+    .b-t { 
+        border-top: 1px solid $border-color;
+    }
+    .b-all {
+        border: 1px solid $border-color!important;
+    }
+}
+
 
 /*******************
 Background colors
