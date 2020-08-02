@@ -49,19 +49,17 @@ class Perhitungan extends CI_Controller
         }
 
         if ($status) {
-            echo "Ada yang kosong";
+            $this->pohon_keputusan_dengan_na($data_uji);
         } else {
-            echo "penuh semua";
+            $this->pohon_keputusan_tanpa_na($data_uji);
         }
         */
-
+        
         if (in_array(null, $data_uji)) {
             $this->pohon_keputusan_dengan_na($data_uji);
         } else {
             $this->pohon_keputusan_tanpa_na($data_uji);
         }
-
-        
     }
 
     public function pohon_keputusan_tanpa_na($data_uji)
@@ -128,7 +126,9 @@ class Perhitungan extends CI_Controller
             }
         }
 
+        
         $this->riwayat_model->simpan_data($data_uji);
+        $this->load->view('hasil_analisis',$data_uji);
     }
 
     public function pohon_keputusan_dengan_na($data_uji)
@@ -195,7 +195,9 @@ class Perhitungan extends CI_Controller
             }
         }
 
+        
         $this->riwayat_model->simpan_data($data_uji);
+        $this->load->view('hasil_analisis',$data_uji);
     }
 }
 

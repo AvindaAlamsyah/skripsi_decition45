@@ -396,175 +396,106 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">General Form</h4>
-                                <h6 class="card-subtitle"> All with bootstrap element classies </h6>
-                                <form action="<?php echo base_url('Perhitungan') ?>" method="post" class="mt-4">
-                                    <div class="form-group">
-                                        <label for="age">Age</label>
-                                        <input type="text" class="form-control" name="age" id="age" placeholder="Masukkan umur pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="bp">Blood Pressure</label>
-                                        <input type="text" class="form-control" name="bp" id="bp" placeholder="Masukkan tekanan darah pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="sg">Specific Gravity</label>
-                                        <select class="custom-select col-12" aria-describedby="sg_help" class="form-control" name="sg" id="sg">
-                                            <option selected>Pilih berat jenis pasien</option>
-                                            <option value="1005">1.005</option>
-                                            <option value="1010">1.010</option>
-                                            <option value="1015">1.015</option>
-                                            <option value="1020">1.020</option>
-                                            <option value="1025">1.025</option>
-                                        </select>
-                                        <small id="sg_help" class="form-text text-muted">Kosongkan pilihan jika status pasien tidak diketahui.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="al">Albumin</label>
-                                        <select class="custom-select col-12" aria-describedby="al_help" class="form-control" name="al" id="al">
-                                            <option selected>Pilih albumin pasien</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                        <small id="al_help" class="form-text text-muted">Kosongkan pilihan jika status pasien tidak diketahui.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="su">Sugar</label>
-                                        <select class="custom-select col-12" aria-describedby="su_help" class="form-control" name="su"id="su">
-                                            <option selected>Pilih gula pasien</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                        <small id="su_help" class="form-text text-muted">Kosongkan pilihan jika status pasien tidak diketahui.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="rbc">Red Blood Cells</label>
-                                        <select class="custom-select col-12" aria-describedby="rbc_help" class="form-control" name="rbc" id="rbc">
-                                            <option selected>Pilih sel darah merah pasien</option>
-                                            <option value="normal">normal</option>
-                                            <option value="abnormal">abnormal</option>
-                                        </select>
-                                        <small id="rbc_help" class="form-text text-muted">Kosongkan pilihan jika status pasien tidak diketahui.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pc">Pus Cell</label>
-                                        <select class="custom-select col-12" aria-describedby="pc_help" class="form-control" name="pc" id="pc">
-                                            <option selected>Pilih sel nanah pasien</option>
-                                            <option value="normal">normal</option>
-                                            <option value="abnormal">abnormal</option>
-                                        </select>
-                                        <small id="pc_help" class="form-text text-muted">Kosongkan pilihan jika status pasien tidak diketahui.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pcc">Pus Cell Clumps</label>
-                                        <select class="custom-select col-12" aria-describedby="pcc_help" class="form-control" name="pcc" id="pcc">
-                                            <option selected>Pilih gumpalan sel nanah pasien</option>
-                                            <option value="present">present</option>
-                                            <option value="notpresent">notpresent</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="ba">Bacteria</label>
-                                        <select class="custom-select col-12" aria-describedby="ba_help" class="form-control" name="ba" id="ba">
-                                            <option selected>Pilih bacteri pasien</option>
-                                            <option value="present">present</option>
-                                            <option value="notpresent">notpresent</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="bgr">Blood Glucose Random</label>
-                                        <input type="text" class="form-control" name="bgr" id="bgr" placeholder="Masukkan glukosa darah acak pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="bu">Blood Urea</label>
-                                        <input type="text" class="form-control" name="bu" id="bu" placeholder="Masukkan urea darah pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="sc">Serum Creatinine</label>
-                                        <input type="text" class="form-control" name="sc" id="sc" placeholder="Masukkan kreatinin serum pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="sod">Sodium</label>
-                                        <input type="text" class="form-control" name="sod" id="sod" placeholder="Masukkan sodium pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pot">Potassium</label>
-                                        <input type="text" class="form-control" name="pot" id="pot" placeholder="Masukkan kalium pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="hemo">Hemoglobin</label>
-                                        <input type="text" class="form-control" name="hemo" id="hemo" placeholder="Masukkan hemoglobin pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pcv">Packed Cell Volume</label>
-                                        <input type="text" class="form-control" name="pcv" id="pcv" placeholder="Masukkan volume sel yang dikemas pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="wbcc">White Blood Cell Count</label>
-                                        <input type="text" class="form-control" name="wbcc" id="wbcc" placeholder="Masukkan jumlah sel darah putih pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="rbcc">Red Blood Cell Count</label>
-                                        <input type="text" class="form-control" name="rbcc" id="rbcc" placeholder="Masukkan jumlah sel darah merah pasien">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="htn">Hypertension</label>
-                                        <select class="custom-select col-12" aria-describedby="htn_help" class="form-control" name="htn" id="htn">
-                                            <option selected>Pilih hipertensi pasien</option>
-                                            <option value="yes">yes</option>
-                                            <option value="no">no</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="dm">Diabetes Mellitus</label>
-                                        <select class="custom-select col-12" aria-describedby="dm_help" class="form-control" name="dm" id="dm">
-                                            <option selected>Pilih diabetes mellitus pasien</option>
-                                            <option value="yes">yes</option>
-                                            <option value="no">no</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="cad">Coronary Artery Disease</label>
-                                        <select class="custom-select col-12" aria-describedby="cad_help" class="form-control" name="cad" id="cad">
-                                            <option selected>Pilih penyakit arteri koroner pasien</option>
-                                            <option value="yes">yes</option>
-                                            <option value="no">no</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="appet">Appetite</label>
-                                        <select class="custom-select col-12" aria-describedby="appet_help" class="form-control" name="appet" id="appet">
-                                            <option selected>Pilih napsu makan pasien</option>
-                                            <option value="good">good</option>
-                                            <option value="poor">poor</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pe">Pedal Edema</label>
-                                        <select class="custom-select col-12" aria-describedby="pe_help" class="form-control" id="pe" name="pe">
-                                            <option selected>Pilih edema pedal pasien</option>
-                                            <option value="yes">yes</option>
-                                            <option value="no">no</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="ane">Anemia</label>
-                                        <select class="custom-select col-12" aria-describedby="ane_help" class="form-control" name="ane" id="ane">
-                                            <option selected>Pilih anemia pasien</option>
-                                            <option value="yes">yes</option>
-                                            <option value="no">no</option>
-                                        </select>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Class</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $class;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Age</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $age;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Blood Pressure</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $blood_pressure;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Specific Gravity</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $specific_gravity;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Albumin</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $albumin;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Sugar</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $sugar;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Red Blood Cells</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $red_blood_cells;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Pus Cell</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $pus_cell;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Pus Cell Clumps</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $pus_cell_clumps;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Bacteria</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $bacteria;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Blood Glucose Random</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $blood_glucose_random;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Blood Urea</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $blood_urea;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Serum Creatinine</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $serum_creatinine;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Sodium</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $sodium;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Potassium</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $potassium;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Hemoglobin</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $hemoglobin;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Packed Cell Volume</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $packed_cell_volume;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">White Blood Cell Count</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $white_blood_cell_count;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Red Blood Cell Count</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $red_blood_cell_count;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Hypertension</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $hypertension;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Diabetes Mellitus</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $diabetes_mellitus;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Coronary Artery Disease</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $coronary_artery_disease;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Appetite</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $appetite;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Pedal Edema</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $pedal_edema;?></b></label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-4 col-form-label">Anemia</label>
+                                    <label class="col-8 col-form-label">: <b><?php echo $anemia;?></b></label>
+                                </div>
                             </div>
                         </div>
                     </div>
